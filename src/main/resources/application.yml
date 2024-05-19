@@ -1,0 +1,26 @@
+# Nombre de la aplicación
+spring:
+  application:
+    name: biblioteca-crud-1
+
+# Configuración del datasource
+  datasource:
+    url: jdbc:mysql://localhost:3306/biblioteca2024
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# Configuración de JPA e Hibernate
+  jpa:
+    database: mysql
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+# Configuración del servidor
+server:
+  port: 8080
